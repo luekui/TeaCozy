@@ -2,14 +2,19 @@ body {
   margin: 0px;
   font-family: Helvetica;
   font-size: 22px;
-  color: seashell;
+  color: SeaShell;
   background-color: black;
   opacity: 0.9;
   text-align: center;
 }
 
 a {
-  color: seashell;
+  color: SeaShell;
+}
+
+h2, h4 {
+  margin: 0;
+  padding: 11px;
 }
 
 header {
@@ -17,7 +22,7 @@ header {
   position: fixed;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid seashell;
+  border-bottom: 1px solid SeaShell;
   background-color: black;
   z-index: 1;
   width: 100%;
@@ -43,46 +48,90 @@ nav span {
   margin: auto;
 }
 
-.content div {
-  border: 1px solid white;
-}
-
-.content .mission {
+.mission {
   display: flex;
   flex-direction: column;
   background-image: url("../img/img-mission-background.jpg");
   height: 700px;
+  width: 1200px;
   justify-content: center;
 }
 
-.content .mission .title {
+.mission .title {
   background-color: black;
 }
 
-.content .featured-tea {
+.featured-tea {
   justify-content: flex-end;
   width: 1000px;
+  margin: 70px auto;
 }
 
-.tea-selection {
+.selection {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
-.tea-selection div {
+.selection div {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   width: 300px;
 }
 
-.tea-selection h4 {
-  border: 1px solid white;
-}
-.tea-selection img {
+
+.selection img {
   height: 200px;
   width: 300px;
 }
-.content .locations {
+
+.selection .top-middle {
+  margin: 0 44px;
+}
+
+.selection .bottom {
+  margin: 0 25px;
+}
+
+.selection .item img {
+  margin-bottom: 10px;
+}
+
+.featured-tea .selection .item {
+  padding: 20px 0;
+}
+
+.locations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  background-image: url("../img/img-locations-background.jpg");
+  height: 500px;
+  width: 1200px;
+}
+
+.locations .title h2 {
+  padding: 0;
+}
+
+
+.locations .selection .item {
+  background-color: black;
+  opacity: 1;
+  margin: 15px 20px 0 20px;
+}
+
+.locations .selection .item span {
+  height: 59px;
+}
+
+.contact {
+  height: 200px;
+}
+
+.copy {
+  text-align: left;
+  margin-left: 20px;
 }
