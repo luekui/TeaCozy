@@ -48,23 +48,32 @@ nav span {
   margin: auto;
 }
 
-.mission {
+.container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  width: 1200px;
+}
+
+#mission {
   background-image: url("../img/img-mission-background.jpg");
   height: 700px;
-  width: 1200px;
-  justify-content: center;
 }
 
-.mission .title {
-  background-color: black;
-}
-
-.featured-tea {
+#featured-tea {
   justify-content: flex-end;
   width: 1000px;
   margin: 70px auto;
+}
+
+#locations {
+  background-image: url("../img/img-locations-background.jpg");
+  height: 500px;
+}
+
+.title {
+  background-color: black;
 }
 
 .selection {
@@ -79,7 +88,6 @@ nav span {
   justify-content: flex-start;
   width: 300px;
 }
-
 
 .selection img {
   height: 200px;
@@ -98,32 +106,25 @@ nav span {
   margin-bottom: 10px;
 }
 
-.featured-tea .selection .item {
+#featured-tea .selection .item {
   padding: 20px 0;
 }
 
-.locations {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: auto;
-  background-image: url("../img/img-locations-background.jpg");
-  height: 500px;
-  width: 1200px;
-}
-
-.locations .title h2 {
+#locations .title h2 {
   padding: 0;
 }
 
+#locations .title {
+  background-color: inherit;
+}
 
-.locations .selection .item {
+#locations .selection .item {
   background-color: black;
   opacity: 1;
   margin: 15px 20px 0 20px;
 }
 
-.locations .selection .item span {
+#locations .selection .item span {
   height: 59px;
 }
 
